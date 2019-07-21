@@ -2,8 +2,8 @@ import pyowm
 import telebot
 import random
 
-owm = pyowm.OWM('96aab7645a2bee4781276b06e305360c', language='ru')
-bot = telebot.TeleBot('909152251:AAEp6TscuES225C3xSvqjozUk0ZImayiwXY')
+owm = pyowm.OWM('API', language='ru')
+bot = telebot.TeleBot('Token')
 
 @bot.message_handler(commands=['command1', 'command2'])
 def handle_start_help(message):
